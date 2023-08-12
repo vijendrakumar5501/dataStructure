@@ -14,7 +14,7 @@ public:
        }
        return maxval;
 
-// o(n2)
+// o(n)
         for(int i=0;i<nums.size();i++){
             int cursum=0;
             int chek=false;
