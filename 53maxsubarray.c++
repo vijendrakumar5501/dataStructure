@@ -17,13 +17,18 @@ public:
 // o(n2)
         for(int i=0;i<nums.size();i++){
             int cursum=0;
+            int chek=false;
             for(int j=i;j<nums.size();j++){
                 cursum+=nums[j];
                  if(cursum>maxval)
                 maxval=cursum;
-                else if(cursum<0)
+                 if(cursum<0)
                 break;
+            if(j==nums.size()-1)
+            check=true;
             }
+            if(check)
+            break;
         }
         return maxval;
 
